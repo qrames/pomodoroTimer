@@ -21,19 +21,16 @@
             <h1>Kanban Pomodoro</h1>
 
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Nouvelle t&acirc;che" aria-label="task" aria-describedby="basic-addon2">
+                <input id="newTask" type="text" class="form-control" placeholder="Nouvelle t&acirc;che" aria-label="task" aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button">Ajouter votre T&acirc;che</button>
+                    <button id="addTask" class="btn btn-outline-secondary" type="button">Ajouter votre T&acirc;che</button>
                 </div>
             </div>
             <div class="row bg-dark text-light">
-                <div class="col-4">
+                <div class="col-4 " >
                     <p>A faire</p>
-                    <div class="input-group input-group-sm mb-3">
-                        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" readonly>
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button"><i class="far fa-trash-alt"></i></button>
-                        </div>
+                    <div id="toDo">
+
                     </div>
                 </div>
                 <div class="col-4">
@@ -51,12 +48,16 @@
                 </div>
                 <div class="col-4">
                     <p>Fait</p>
+                    <div id="down">
+
+                    </div>
                 </div>
 
         </main>
         </div>
         <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/circlebars/dist/circle.js"></script>
+        <script src="node_modules/sortablejs/Sortable.min.js" charset="utf-8"></script>
         <script src="js/script.js"></script>
 </body>
 
