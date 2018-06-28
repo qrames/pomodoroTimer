@@ -1,7 +1,7 @@
 body{
     background-color: pink;
 }
-main{
+.content-fluid{
     width: 80%;
     margin: auto;
 }
@@ -13,6 +13,10 @@ h1, th, td{
     text-align: center;
 }
 p, input, button{
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
+}
+#timerStart, #timerPause{
+    width: 35%;
+    margin: 0.5rem;
 }

@@ -8,16 +8,9 @@ console.log('>>>script.js');
 
 $(document).ready(function($) {
     //timer POMODORO
-    function time(){
-        $("#timer").value
-    }
     new Circlebar({
-        element : "#circle-1"
-    });
-    $("#circle-1").Circlebar({
-        skin: "yellowcircle",
-        maxValue: 25,
-        fontSize: "14px",
-        triggerPercentage: true
+        element : "#timer",
+        skin : "yellow",
+        size : "200px",
     });
 });
