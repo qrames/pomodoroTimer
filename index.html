@@ -8,6 +8,9 @@
     <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.min.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="node-modules/circlebars/dist/circle.css">
+    <link rel="stylesheet" type="text/css" href="node-modules/circlebars/dist/skins/yellowcircle.css">
+
     <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
@@ -20,12 +23,7 @@
 
             <div class="row bg-dark text-light">
                 <div class="col-12">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Nouvelle t&acirc;che" aria-label="task" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button">Ajouter votre T&acirc;che</button>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="col-4">
                     <p>A faire</p>
@@ -38,9 +36,26 @@
                 </div>
                 <div class="col-4">
                     <p>En cours</p>
-                    <input type="text" name="timer" value="25.00" readonly>
-                    <button class="btn btn-light" type="submit">Début</button>
-                    <button class="btn btn-light" type="submit">Pause</button>
+                    <!-- <input type="text" name="timer" id="timer" value="25.00" readonly> -->
+                    <!-- <div class="circles-container">
+                        <div id="circle-1" data-circle-dialWidth=10 data-circle-skin="yellow">
+                            <div class="loader-bg">
+                                <div class="text">00:00:00</div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div id="circle-1" data-circle-dialWidth=10 data-circle-skin="yellow">
+                        <div class="loader-bg">
+                            <div class="text">00:00:00</div>
+                        </div>
+                    </div> -->
+                    <div id="circle-1">
+                        <div class="loader-bg">
+                            <div class="text">00:00:00</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-light" type="submit" id="timerStart">Début</button>
+                    <button class="btn btn-light" type="submit" id="timerPause">Pause</button>
                 </div>
                 <div class="col-4">
                     <p>Fait</p>
@@ -49,6 +64,7 @@
         </main>
         </div>
         <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="node_modules/circlebars/dist/circle.js"></script>
         <!-- <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
         <script src="js/script.js"></script>
 </body>
