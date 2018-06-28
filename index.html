@@ -6,6 +6,7 @@
     <title>POMODORO !</title>
     <!-- <link rel="stylesheet" href="css/reset.css" /> -->
     <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -16,44 +17,40 @@
     <div class="content-fluid">
         <main>
             <h1>Kanban Pomodoro</h1>
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Nouvelle t&acirc;che" aria-label="task" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button">Ajouter votre T&acirc;che</button>
+
+            <div class="row bg-dark text-light">
+                <div class="col-12">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Nouvelle t&acirc;che" aria-label="task" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">Ajouter votre T&acirc;che</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <table class="table table-hover table-dark">
-                <thead>
-                    <tr>
-                        <th scope="col">A faire</th>
-                        <th scope="col">En cours</th>
-                        <th scope="col">Fait</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td>Jacob</td>
-                        <td><button class="btn btn-light" type="submit">Début</button></td>
+                <div class="col-4">
+                    <p>A faire</p>
+                    <div class="input-group input-group-sm mb-3">
+                        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button"><i class="far fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <p>En cours</p>
+                    <input type="text" name="timer" value="25.00" readonly>
+                    <button class="btn btn-light" type="submit">Début</button>
+                    <button class="btn btn-light" type="submit">Pause</button>
+                </div>
+                <div class="col-4">
+                    <p>Fait</p>
+                </div>
 
-                    </tr>
-                    <tr>
-                        <td colspan="2">Larry the Bird</td>
-                        <td><button class="btn btn-light" type="submit">Pause</button></td>
-
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
         </main>
-    </div>
-    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-    <!-- <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
-    <script src="js/script.js"></script>
+        </div>
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+        <!-- <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
+        <script src="js/script.js"></script>
 </body>
 
 </html>
