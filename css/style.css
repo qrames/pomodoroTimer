@@ -1,5 +1,6 @@
 body{
-    background-color: pink;
+    background-image: url("../img/image.png");
+    background-size: cover;
 }
 .content-fluid{
     width: 80%;

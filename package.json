@@ -12,6 +12,7 @@
     "bootstrap": "^4.1.1",
     "circlebars": "^1.0.4",
     "jquery": "^3.3.1",
-    "sortablejs": "^1.7.0"
+    "sortablejs": "^1.7.0",
+    "sweetalert": "^2.1.0"
   }
 }

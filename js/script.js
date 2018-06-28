@@ -2,11 +2,21 @@ console.log('>>>script.js');
 
 $(document).ready(function($) {
     //timer POMODORO
+    $("#timer").hide();
+$("#timerStart").click(function(){
     new Circlebar({
         element: "#timer",
         skin: "yellow",
         size: "200px",
     });
+    $("#timer").show();
+})
+$("#timerPause").click(function(){
+    // swal("Good job!", "You clicked the button!", "success");
+    alert("Prenez donc une petite pause mes choupinouX!")
+    // $(Circlebar).stop();
+
+})
     // $(".input-group").each(function(index, el) {
     //     Sortable.create(el);
     // });
@@ -37,7 +47,20 @@ $(document).ready(function($) {
     }
 
     $("#addTask").click(function() {
-        newTask($("#newTask").val());
-        $("#newTask").val('');
+
+        if ($("#newTask").val() == "") {
+            alert("Miaou!") ;
+        }
+        else{
+            newTask($("#newTask").val());
+            $("#newTask").val('');
+        }
     });
+    setInterval(function () {
+        if ($(".text").text() === "00:00:30") {
+            var finishedTash = $("#toDo div").first();
+            $("#down").append(finishedTash);
+        }
+console.log($(".text").text());
+    }, 1000);
 });
