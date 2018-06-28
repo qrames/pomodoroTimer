@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <!-- <link rel="stylesheet" href="css/reset.css" /> -->
-        <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.min.css"> -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css" />
-        <meta name="viewport" content="width=device-width, user-scalable=no">
 
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <title>POMODORO !</title>
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.min.css"> -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
 
+</head>
 
-        <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-        <!-- <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"> -->
+<body>
+    <div class="content-fluid">
+        <main>
+            <h1>Kanban Pomodoro</h1>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Nouvelle t&acirc;che" aria-label="task" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">Ajouter votre T&acirc;che</button>
+                </div>
+            </div>
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">A faire</th>
+                        <th scope="col">En cours</th>
+                        <th scope="col">Fait</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>Jacob</td>
+                        <td><button class="btn btn-light" type="submit">Début</button></td>
 
-        </script>
-        <script src="js/script.js"></script>
-    </body>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Larry the Bird</td>
+                        <td><button class="btn btn-light" type="submit">Pause</button></td>
+
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
+    <script src="js/script.js"></script>
+</body>
+
 </html>
